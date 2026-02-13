@@ -20,32 +20,42 @@
         }
         
         .header {
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.9) 0%, rgba(59, 130, 246, 0.9) 100%), 
+                        url('assets/banner-hero.jpg') center/cover no-repeat;
             color: white;
-            padding: 3rem 1rem;
+            padding: 4rem 1rem;
             text-align: center;
+            position: relative;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         .header-logo {
-            max-width: 300px;
+            max-width: 280px;
             height: auto;
-            margin-bottom: 2rem;
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
+            margin-bottom: 3rem;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
         }
         
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
             font-weight: 700;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         
         .header p {
-            font-size: 1.2rem;
-            opacity: 0.95;
+            font-size: 1.3rem;
+            opacity: 1;
             max-width: 700px;
             margin: 0 auto;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
         }
         
         .about-section {
