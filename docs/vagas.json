@@ -1,38 +1,17 @@
 {
-  "empresa": "Handcom",
-  "site": "https://www.handcom.com.br",
-  "atualizado_em": "2026-02-11T09:28:52.652102",
-  "total": 2,
   "vagas": [
     {
-      "id": 2,
-      "titulo": "Analista de Suporte",
-      "descricao": "Atendimento a clientes, suporte técnico em sistemas de WMS e gestão de estoque. Resolução de problemas e treinamento de usuários.",
-      "requisitos": "Experiência com suporte técnico, conhecimento em banco de dados, boa comunicação. Desejável conhecimento em sistemas de logística.",
-      "beneficios": null,
+      "id": 3,
+      "titulo": "Desenvolvedor .NET Pleno",
+      "descricao": "Buscamos um(a) Desenvolvedor(a) .NET Pleno para integrar nosso time de desenvolvimento do Mobilize WMS, nossa solução completa de gestão de armazéns e centros de distribuição. Você trabalhará diretamente no desenvolvimento de novas funcionalidades e na evolução de sistemas críticos de logística, utilizando desenvolvimento assistido por IA para acelerar entregas e aumentar a qualidade do código. Ambiente inovador com desafios técnicos reais em projetos de clientes de grande porte do mercado nacional.",
+      "requisitos": "Mínimo 5 anos de experiência com .NET (C#), ASP.NET Core, Entity Framework, SQL Server, APIs REST, Git. Experiência com desenvolvimento assistido por IA (GitHub Copilot, ChatGPT, ou similares). Blazor é um diferencial. Conhecimento em arquitetura de software, Clean Code, SOLID, testes automatizados. Familiaridade com sistemas de logística/WMS é desejável.",
+      "beneficios": "Vale alimentação compatível com o mercado, Plano de saúde coparticipativo, Vale academia, Ambiente inovador no Parque Tecnológico da UFJF, Possibilidade de crescimento profissional, Acesso a ferramentas de IA para desenvolvimento, Treinamentos e capacitações",
+      "local": "Juiz de Fora, MG - CRITT/UFJF (Parque Tecnológico)",
       "tipo": "CLT",
-      "modalidade": "Híbrido",
-      "local": "Juiz de Fora, MG",
-      "departamento": null,
-      "salario_min": null,
-      "salario_max": null,
-      "form_url": "https://tally.so/r/VL5bGJ",
-      "publicado_em": "2026-02-11T09:27:52.564005"
-    },
-    {
-      "id": 1,
-      "titulo": "Desenvolvedor Backend",
-      "descricao": "Desenvolvimento de APIs REST e microserviços para sistemas de WMS e gestão de estoque. Ambiente dinâmico com desafios técnicos interessantes.",
-      "requisitos": "Java, Spring Boot, PostgreSQL, Docker. Experiência com APIs REST. Desejável conhecimento em sistemas de logística.",
-      "beneficios": "Vale refeição, plano de saúde, home office flexível, PLR",
-      "tipo": "CLT",
-      "modalidade": "Híbrido",
-      "local": "Juiz de Fora, MG",
-      "departamento": null,
-      "salario_min": null,
-      "salario_max": null,
-      "form_url": "https://tally.so/r/KYlvKD",
-      "publicado_em": "2026-02-11T08:31:32.427780"
+      "modalidade": "Presencial",
+      "form_url": "https://tally.so/r/xXabbJ",
+      "banner_url": "banners/vaga-3-2026-02-13-16-32-05.png"
     }
-  ]
+  ],
+  "atualizado_em": "2026-02-13T19:32:00Z"
 }

@@ -3,204 +3,351 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhe na Handcom</title>
-    <meta name="description" content="Vagas abertas na Handcom. Venha fazer parte do nosso time!">
+    <title>Trabalhe na Handcom | Vagas de Tecnologia</title>
+    <meta name="description" content="Faça parte do time que transforma a logística do futuro. Vagas em tecnologia, desenvolvimento e inovação na Handcom.">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f5f5f5;
         }
+        
         .header {
-            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             color: white;
-            padding: 60px 20px;
+            padding: 3rem 1rem;
             text-align: center;
         }
+        
+        .header-logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 2rem;
+            filter: brightness(0) invert(1);
+        }
+        
         .header h1 {
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
+        
         .header p {
             font-size: 1.2rem;
-            opacity: 0.9;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
         }
-        .container {
+        
+        .about-section {
+            background: white;
+            padding: 3rem 1rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .about-section h2 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .about-content {
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
         }
-        .about {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
         }
-        .about h2 {
-            color: #1a365d;
-            margin-bottom: 15px;
-        }
-        .vagas-list {
+        
+        .highlights {
             display: grid;
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
-        .vaga-card {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+        
+        .highlight-card {
+            background: #f0f9ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3b82f6;
         }
-        .vaga-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        
+        .highlight-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
         }
-        .vaga-card h3 {
-            color: #1a365d;
-            font-size: 1.4rem;
-            margin-bottom: 10px;
+        
+        .highlight-card p {
+            color: #666;
+            font-size: 0.95rem;
         }
-        .vaga-meta {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-bottom: 15px;
-            font-size: 0.9rem;
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .vagas-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .vagas-header h2 {
+            font-size: 2.5rem;
+            color: #1e3a8a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .vagas-header p {
+            font-size: 1.1rem;
             color: #666;
         }
+        
+        .vagas-list {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .vaga-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .vaga-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+        
+        .vaga-banner {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .vaga-title {
+            font-size: 1.8rem;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .vaga-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+            color: #666;
+        }
+        
         .vaga-meta span {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 0.3rem;
         }
-        .vaga-descricao {
-            margin-bottom: 20px;
-            color: #444;
+        
+        .vaga-description {
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
         }
-        .vaga-requisitos {
-            background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            font-size: 0.95rem;
+        
+        .vaga-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
         }
-        .vaga-requisitos strong {
-            color: #1a365d;
+        
+        .tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
         }
-        .btn-candidatar {
+        
+        .vaga-btn {
             display: inline-block;
-            background: #2c5282;
+            background: linear-gradient(135deg, #3b82f6 0%, #1e3a8a 100%);
             color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
+            padding: 1rem 2rem;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            transition: background 0.2s;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-        .btn-candidatar:hover {
-            background: #1a365d;
+        
+        .vaga-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
         }
+        
         .footer {
+            background: #1e3a8a;
+            color: white;
             text-align: center;
-            padding: 30px;
-            color: #666;
-            font-size: 0.9rem;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
         }
-        .no-vagas {
-            text-align: center;
-            padding: 60px 20px;
-            color: #666;
+        
+        .footer a {
+            color: #60a5fa;
+            text-decoration: none;
         }
-        .tag {
-            display: inline-block;
-            background: #e2e8f0;
-            color: #4a5568;
-            padding: 4px 12px;
-            border-radius: 15px;
-            font-size: 0.85rem;
+        
+        .footer a:hover {
+            text-decoration: underline;
         }
-        @media (max-width: 600px) {
+        
+        @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8rem;
             }
-            .vaga-meta {
-                flex-direction: column;
-                gap: 8px;
+            
+            .header p {
+                font-size: 1rem;
+            }
+            
+            .vaga-title {
+                font-size: 1.4rem;
+            }
+            
+            .highlights {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>🚀 Trabalhe na Handcom</h1>
-        <p>Faça parte do nosso time!</p>
+        <img src="assets/horizontal.jpg" alt="Handcom" class="header-logo">
+        <h1>Faça Parte do Nosso Time</h1>
+        <p>Transforme a logística do futuro com tecnologia e inovação</p>
+    </div>
+    
+    <div class="about-section">
+        <h2>Sobre a Handcom</h2>
+        <div class="about-content">
+            <p>
+                <strong>A Handcom é líder em soluções tecnológicas para gestão de armazéns e logística no Brasil.</strong> 
+                Fundada em 2007, desenvolvemos o Mobilize WMS, uma plataforma completa que otimiza operações logísticas 
+                de grandes empresas do mercado nacional.
+            </p>
+            <p>
+                Com sede no <strong>Parque Tecnológico da UFJF em Juiz de Fora</strong>, somos reconhecidos pela 
+                Fundação Nacional da Qualidade (FNQ) com o selo ouro IQM. Nossa missão é <strong>empoderar pessoas 
+                que movem o mundo rumo ao futuro</strong>, combinando inovação tecnológica com simplicidade e eficiência.
+            </p>
+            
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>🚀 Inovação</h3>
+                    <p>Desenvolvimento com IA, tecnologias modernas (.NET, Blazor, RFID, IoT) e arquitetura cloud.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>📈 Impacto Real</h3>
+                    <p>Seus projetos impactam operações críticas de grandes players do mercado nacional.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>🎯 Crescimento</h3>
+                    <p>Ambiente de aprendizado contínuo com desafios técnicos complexos e variedade de projetos.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>🏆 Qualidade</h3>
+                    <p>Empresa certificada FNQ com cultura de excelência e boas práticas de desenvolvimento.</p>
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="container">
-        <div class="about">
-            <h2>Sobre a Handcom</h2>
-            <p>
-A Handcom é uma empresa especializada em soluções de gestão de estoque, WMS (Warehouse Management System) 
-e controle de ativos. Com mais de 10 anos de experiência, ajudamos empresas de todos os portes a 
-otimizar suas operações logísticas com tecnologia de ponta e um time apaixonado por resolver problemas complexos.
-<br><br>
-Aqui você encontra um ambiente dinâmico, desafios técnicos interessantes e oportunidade de crescimento profissional.
-Valorizamos a autonomia, a colaboração e a busca constante por inovação.
-</p>
+        <div class="vagas-header">
+            <h2>Vagas Abertas</h2>
+            <p>Encontre a oportunidade ideal para você</p>
         </div>
         
-        <h2 style="margin-bottom: 20px; color: #1a365d;">📋 Vagas Abertas (2)</h2>
-        
-        <div class="vagas-list">
-            
-<div class="vaga-card">
-    <h3>Analista de Suporte</h3>
-    <div class="vaga-meta">
-        <span>📍 Juiz de Fora, MG</span>
-        <span>💼 CLT</span>
-        <span>🏠 Híbrido</span>
-        
-    </div>
-    <p class="vaga-descricao">Atendimento a clientes, suporte técnico em sistemas de WMS e gestão de estoque. Resolução de problemas e treinamento de usuários.</p>
-    
-        <div class="vaga-requisitos">
-            <strong>Requisitos:</strong> Experiência com suporte técnico, conhecimento em banco de dados, boa comunicação. Desejável conhecimento em sistemas de logística.
-        </div>
-        
-    <a href="https://tally.so/r/VL5bGJ" target="_blank" class="btn-candidatar">Candidatar-se →</a>
-</div>
-
-
-<div class="vaga-card">
-    <h3>Desenvolvedor Backend</h3>
-    <div class="vaga-meta">
-        <span>📍 Juiz de Fora, MG</span>
-        <span>💼 CLT</span>
-        <span>🏠 Híbrido</span>
-        
-    </div>
-    <p class="vaga-descricao">Desenvolvimento de APIs REST e microserviços para sistemas de WMS e gestão de estoque. Ambiente dinâmico com desafios técnicos interessantes.</p>
-    
-        <div class="vaga-requisitos">
-            <strong>Requisitos:</strong> Java, Spring Boot, PostgreSQL, Docker. Experiência com APIs REST. Desejável conhecimento em sistemas de logística.
-        </div>
-        
-    <a href="https://tally.so/r/KYlvKD" target="_blank" class="btn-candidatar">Candidatar-se →</a>
-</div>
-
+        <div class="vagas-list" id="vagas-list">
+            <!-- Vagas serão carregadas via JavaScript -->
         </div>
     </div>
     
     <div class="footer">
-        <p>&copy; 2026 Handcom | <a href="https://www.handcom.com.br">https://www.handcom.com.br</a></p>
-        <p style="margin-top: 10px; font-size: 0.8rem;">Atualizado em 11/02/2026 às 09:28</p>
+        <p>&copy; 2026 Handcom Inovações | <a href="https://www.handcom.com.br">www.handcom.com.br</a></p>
+        <p>Juiz de Fora, MG - CRITT/UFJF (Parque Tecnológico)</p>
     </div>
+    
+    <script>
+        async function carregarVagas() {
+            try {
+                const response = await fetch('vagas.json');
+                const data = await response.json();
+                
+                const vagasList = document.getElementById('vagas-list');
+                
+                if (data.vagas.length === 0) {
+                    vagasList.innerHTML = '<p style="text-align: center; color: #666;">Nenhuma vaga disponível no momento. Volte em breve!</p>';
+                    return;
+                }
+                
+                data.vagas.forEach(vaga => {
+                    const vagaCard = document.createElement('div');
+                    vagaCard.className = 'vaga-card';
+                    
+                    // Tecnologias principais
+                    const requisitos = vaga.requisitos.split(',').slice(0, 5);
+                    
+                    vagaCard.innerHTML = `
+                        ${vaga.banner_url ? `<img src="${vaga.banner_url}" alt="${vaga.titulo}" class="vaga-banner">` : ''}
+                        <h3 class="vaga-title">${vaga.titulo}</h3>
+                        <div class="vaga-meta">
+                            <span>📍 ${vaga.local}</span>
+                            <span>💼 ${vaga.tipo}</span>
+                            <span>🏢 ${vaga.modalidade}</span>
+                        </div>
+                        <p class="vaga-description">${vaga.descricao}</p>
+                        <div class="vaga-tags">
+                            ${requisitos.map(req => `<span class="tag">${req.trim()}</span>`).join('')}
+                        </div>
+                        <a href="${vaga.form_url}" class="vaga-btn" target="_blank">Candidatar-se →</a>
+                    `;
+                    
+                    vagasList.appendChild(vagaCard);
+                });
+                
+            } catch (error) {
+                console.error('Erro ao carregar vagas:', error);
+                document.getElementById('vagas-list').innerHTML = 
+                    '<p style="text-align: center; color: #666;">Erro ao carregar vagas. Tente novamente mais tarde.</p>';
+            }
+        }
+        
+        carregarVagas();
+    </script>
 </body>
 </html>
