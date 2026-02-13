@@ -1,0 +1,38 @@
+{
+  "empresa": "Handcom",
+  "site": "https://www.handcom.com.br",
+  "atualizado_em": "2026-02-11T09:28:52.652102",
+  "total": 2,
+  "vagas": [
+    {
+      "id": 2,
+      "titulo": "Analista de Suporte",
+      "descricao": "Atendimento a clientes, suporte técnico em sistemas de WMS e gestão de estoque. Resolução de problemas e treinamento de usuários.",
+      "requisitos": "Experiência com suporte técnico, conhecimento em banco de dados, boa comunicação. Desejável conhecimento em sistemas de logística.",
+      "beneficios": null,
+      "tipo": "CLT",
+      "modalidade": "Híbrido",
+      "local": "Juiz de Fora, MG",
+      "departamento": null,
+      "salario_min": null,
+      "salario_max": null,
+      "form_url": "https://tally.so/r/VL5bGJ",
+      "publicado_em": "2026-02-11T09:27:52.564005"
+    },
+    {
+      "id": 1,
+      "titulo": "Desenvolvedor Backend",
+      "descricao": "Desenvolvimento de APIs REST e microserviços para sistemas de WMS e gestão de estoque. Ambiente dinâmico com desafios técnicos interessantes.",
+      "requisitos": "Java, Spring Boot, PostgreSQL, Docker. Experiência com APIs REST. Desejável conhecimento em sistemas de logística.",
+      "beneficios": "Vale refeição, plano de saúde, home office flexível, PLR",
+      "tipo": "CLT",
+      "modalidade": "Híbrido",
+      "local": "Juiz de Fora, MG",
+      "departamento": null,
+      "salario_min": null,
+      "salario_max": null,
+      "form_url": "https://tally.so/r/KYlvKD",
+      "publicado_em": "2026-02-11T08:31:32.427780"
+    }
+  ]
+}
