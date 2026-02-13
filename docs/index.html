@@ -88,9 +88,15 @@
         
         .highlights {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
             margin-top: 2rem;
+        }
+        
+        @media (max-width: 1024px) {
+            .highlights {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         
         .highlight-card {
@@ -237,6 +243,80 @@
             text-decoration: underline;
         }
         
+        .clients-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 3rem 1rem;
+            margin: 3rem auto;
+            text-align: center;
+        }
+        
+        .clients-section h2 {
+            color: #1e3a8a;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .clients-section p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+        }
+        
+        .client-logo {
+            background: white;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 120px;
+        }
+        
+        .client-logo:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+        }
+        
+        .client-logo img {
+            max-width: 100%;
+            max-height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s;
+        }
+        
+        .client-logo:hover img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        .client-logo-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #475569;
+        }
+        
+        @media (max-width: 1024px) {
+            .clients-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 1.8rem;
@@ -252,6 +332,11 @@
             
             .highlights {
                 grid-template-columns: 1fr;
+            }
+            
+            .clients-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
             }
         }
     </style>
@@ -294,6 +379,32 @@
                     <h3>🏆 Qualidade</h3>
                     <p>Empresa certificada FNQ com cultura de excelência e boas práticas de desenvolvimento.</p>
                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="clients-section">
+        <h2>Confiança de Grandes Empresas</h2>
+        <p>Trabalhamos com os maiores players do mercado nacional em logística e varejo</p>
+        
+        <div class="clients-grid">
+            <div class="client-logo">
+                <div class="client-logo-text">Gerdau</div>
+            </div>
+            <div class="client-logo">
+                <div class="client-logo-text">Andrade Gutierrez</div>
+            </div>
+            <div class="client-logo">
+                <div class="client-logo-text">Supermercados Guanabara</div>
+            </div>
+            <div class="client-logo">
+                <div class="client-logo-text">Bahamas Supermercados</div>
+            </div>
+            <div class="client-logo">
+                <div class="client-logo-text">ABC da Construção</div>
+            </div>
+            <div class="client-logo">
+                <div class="client-logo-text">FGV</div>
             </div>
         </div>
     </div>
