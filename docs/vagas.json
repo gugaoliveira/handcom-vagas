@@ -62,5 +62,18 @@
       "banner_url": ""
     }
   ],
-  "atualizado_em": "2026-03-06T16:14:00Z"
+  ,{
+      "id": 8,
+      "titulo": "AI-Native Software Engineer — Tech Lead",
+      "descricao": "A Handcom é uma empresa de tecnologia especializada em WMS, inventário e gestão de ativos para grandes empresas como Gerdau, Andrade Gutierrez e Unimed. Estamos em um momento de transformação: queremos liderar o uso de IA no desenvolvimento de software — não como ferramenta auxiliar, mas como parte central do processo de engenharia.\n\nBuscamos um(a) AI-Native Software Engineer para ser o Tech Lead dessa frente. Você vai elevar o nível técnico da equipe, implementar fluxos de desenvolvimento assistido por IA, e garantir que a Handcom entregue software de alta qualidade com velocidade cada vez maior.\n\nSe você respira IA, já usa ferramentas como Cursor, Copilot ou Claude no seu dia a dia, e sabe como transformar isso em vantagem real para um time de desenvolvimento — essa vaga foi feita para você.",
+      "requisitos": "• Sólida experiência em engenharia de software (mínimo 5 anos)\n• Domínio prático de desenvolvimento assistido por IA: Cursor, GitHub Copilot, Claude, ChatGPT ou equivalentes\n• Capacidade de criar e otimizar prompts para geração de código, revisão e arquitetura\n• Experiência com .NET (C#), APIs REST e arquitetura de sistemas\n• Vivência em liderança técnica: code review, mentoria, definição de padrões e boas práticas\n• Habilidade para avaliar, selecionar e integrar ferramentas de IA ao fluxo de desenvolvimento da equipe\n• Visão de arquitetura de software: SOLID, Clean Code, Design Patterns\n• Experiência com Git, CI/CD e ambientes de homologação/produção\n• Comunicação clara — sabe explicar decisões técnicas para time e gestão",
+      "beneficios": "• Salário competitivo + bônus por performance\n• Papel estratégico: você define como a equipe usa IA no desenvolvimento\n• Ambiente técnico de alto nível com desafios reais em grandes clientes\n• Plano de saúde (Unimed)\n• Vale alimentação\n• Acesso irrestrito a ferramentas de IA (Cursor, Claude, Copilot, etc.)\n• Flexibilidade de trabalho — modelo híbrido\n• Oportunidade de construir do zero a cultura de AI-Native Engineering da empresa",
+      "local": "Juiz de Fora, MG (Parque Tecnológico UFJF) — Híbrido",
+      "tipo": "CLT ou PJ",
+      "modalidade": "Híbrido",
+      "form_url": "https://tally.so/r/jaMOY9",
+      "banner_url": ""
+    }
+  ],
+  "atualizado_em": "2026-03-13T13:32:00Z"
 }
